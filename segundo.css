@@ -1,0 +1,38 @@
+.quadra1 {
+    background-color: red;
+    width:250px;
+    height:250px;
+
+}
+.quadra2 {
+    background-color: yellow;
+    width:250px;
+    height:250px;
+}
+.quadra3 {
+    background-color:green;
+    width:250px;
+    height:250px;
+}
+.quadra4 {
+    background-color: blue;
+    width:250px;
+    height:250px;
+}
+
+.pos{
+    position: absolute;
+    left:30px;
+    right:30px;
+  }
+
+
+
+.image {
+	background: url("https://translate.google.com/website?sl=en&tl=pt&u=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/180px-CSS3_logo_and_wordmark.svg.png") no-repeat;
+	width: 450px;
+	height: 150px;
+	position: static;
+	left: 50px;
+	top: 50px;
+}
