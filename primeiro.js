@@ -2,17 +2,25 @@
     return NUM1 + NUM2;
 }*/
 
-var Nome = "André do Nascimento";
-var Formacao = "- Avanade PCDev -";
-var Ano = 2022;
+//var Nome = "André do Nascimento";
+//var Formacao = "- Avanade PCDev -";
+//var Ano = 2022;
+function NOME(){
+    return 'ANDRÉ DO NASCIMENTO';
+}
+NOME();
+
+function NOME(){
+    return 'ANDRÉ - AVANADE';
+}
+NOME();
 
 function DIVISAO(NUM1, NUM2){
     return NUM1 / NUM2;
 }
+DIVISAO(35,10);
 
-function NOME(André){
-    return NOME;
-}
+
 
 //var nome=[];
 // testando
