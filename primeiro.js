@@ -20,6 +20,10 @@ function NOME(André){
 var nome = ['Andre', 'Erick', 'Nilce', 'Cassia', 'Felipe', 'Moises', 'Maiara'];
 console.log(nome);
 
+var nome = ['Andre', 'Erick', 'Nilce', 'Cassia', 'Felipe', 'Moises', 'Maiara'];
+var inclusao = nome.push('Gustavo');
+console.log(nome);
+console.log(inclusao);
 
 
 /*1 - Crie uma função que retorne o seu nome
