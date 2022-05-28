@@ -1,6 +1,6 @@
-function SOMA(NUM1, NUM2){
+/*function SOMA(NUM1, NUM2){
     return NUM1 + NUM2;
-}
+}*/
 
 var Nome = "André do Nascimento";
 var Formacao = "- Avanade PCDev -";
@@ -14,7 +14,12 @@ function NOME(André){
     return NOME;
 }
 
-let Nome = ['Andre', 'Erick', 'Nilce', 'Cassia', 'Felipe', 'Moises', 'Maiara'];
+//var nome=[];
+// testando
+
+var nome = ['Andre', 'Erick', 'Nilce', 'Cassia', 'Felipe', 'Moises', 'Maiara'];
+console.log(nome);
+
 
 
 /*1 - Crie uma função que retorne o seu nome
