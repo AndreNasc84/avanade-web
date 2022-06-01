@@ -15,7 +15,7 @@ function buscarImgPokemon(lista){
     };
     lista.forEach((idPokemon, i) => {
         setTimeout(() => {
-            xhr2.open('GET', `https://pokeapi.com/api/v2/pokemon/${idPokemon}`);
+            xhr2.open('GET', `https://pokeapi.co/api/v2/pokemon/${idPokemon}`);
             xhr2.send();
         }, 1000 * i);
     });
@@ -24,7 +24,7 @@ function buscarImgPokemon(lista){
 function obterPokemon(){
     var xhr = new XMLHttpRequest();
     var idPokemon = document.getElementById('idPokemon').value;
-    xhr.open('GET', `https://pokeapi.com/api/v2/pokemon/${idPokemon}`);
+    xhr.open('GET', `https://pokeapi.co/api/v2/pokemon/${idPokemon}`);
     xhr.onload = function (){
         document.getElementById('pokemonSel').innerHTML += `<img src="${JSON.parse(xhr.response).sprites.front_default}"/>`;
     };
