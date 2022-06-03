@@ -21,10 +21,28 @@ function retornaFrasePokemon(req, res){
     res.send(`O pokemon digitado foi o ${pokemon}`);
 }
 
+function getObj(req, res){
+    const obj = {
+        altura: 1.75,
+        corCabelo: "preto",
+        cursos: ["JAVA","CSS"],
+        nome: "André",
+        escreverNome: function(){
+            console.log(this.nome);
+        },
+        filhos: [{nome: "josé", idade: 50}, {nome: "maria", idade: 0}],
+        habilitado: false,
+        idade: 25,
+        mae: {nome: "isis", idade: 62}
+    };
+    res.send(obj);
+}
+
 app.get('/teste/andre',helloNode);
 app.get('/', somarNumeros);
 app.get('/:id', retornaDigitado);
 app.get('/pokemon/:nomePokemon', retornaFrasePokemon);
+app.get('/obj/obj', getObj);
 
 app.listen(3000);
 
