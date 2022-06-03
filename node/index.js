@@ -87,14 +87,3 @@ function filhoMaisUmAno() {
 }
 console.log(filhoMaisUmAno());
 
-
-function parouimpar (n1){
-    var n1 = 7
-    console.log(`O número ${n1} é par?`)
-    if (n1%2 == 0){
-        return true
-    }else{
-        return false
-    };
-}
-console.log(parouimpar());
