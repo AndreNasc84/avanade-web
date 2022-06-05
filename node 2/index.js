@@ -118,7 +118,7 @@ app.get('/pokemon', getPokemon);
 app.post('/pokemon', criandoPokemon);
 
 app.listen(3000);
-
+*/
 
 /*
 {
@@ -129,7 +129,7 @@ app.listen(3000);
     order: 0,
     nicknames: ["principal", "filho do ash"]
 }
-*/
+
 
 
 
@@ -150,14 +150,47 @@ const app = express();
 
 app.use(bodyParser.json());
 
-const lista = [];
+var lista = [];
 
 function getPokemon(req, res){
     res.send(lista);
 }
 
 function criandoPokemon(req, res){
-    const lista2 = [
+    const pokemon = req.body;
+    const pokemonPesquisado = lista.find((pokemonNaLista) => pokemonNaLista.id === pokemon.id); /*FIND: Retorna o valor do primeiro elemento na matriz em que o predicado é verdadeiro e indefinido caso contrário.*/
+    if(!pokemonPesquisado) {
+        lista.push(pokemon);
+        res.send('inserido com sucesso');
+    } else {
+        res.send(`não é possível inserir pois já existe um pokemon com o id ${pokemon.id}`);
+    }
+}
+
+function getPokemonById(req, res) {
+    const pokemonId = req.params.id;
+    const pokemonPesquisado = lista.find((pokemonNaLista) => pokemonNaLista.id == pokemonId);
+    if (!pokemonPesquisado){
+        res.send(`não existe um pokemon com o id ${pokemonId}`)
+    } else {
+        res.send(pokemonPesquisado);
+    }
+}
+
+function deletePokemon(req, res){
+    const pokemonId = req.params.id;
+    lista = lista.filter((pokemon) => pokemon.id != pokemonId);
+    res.send(`pokemon de id ${pokemonId} foi removido com sucesso!`);
+}
+
+app.get('/pokemon', getPokemon);
+app.get('/pokeon/:id', getPokemonById);
+app.post('/pokemon', criandoPokemon);
+app.delete('/pokemon/:id', deletePokemon);
+
+app.listen(3000);
+
+/*   const lista2 = [
         {
             "name": "Pikachu", 
             "id": 0,
@@ -180,15 +213,4 @@ function criandoPokemon(req, res){
                 "filho do ash2"
             ]
         }
-    ]
-
-    const pokemon = req.body;
-    const pokemonPesquisado = lista.find((pokemon2) => { pokemon2.id === pokemon.id });
-    lista.push(pokemon);
-    res.send('inserido com sucesso');
-}
-
-app.get('/pokemon', getPokemon);
-app.post('/pokemon', criandoPokemon);
-
-app.listen(3000);
+    ]*/
