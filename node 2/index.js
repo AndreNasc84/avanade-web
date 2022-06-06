@@ -214,3 +214,70 @@ app.listen(3000);
             ]
         }
     ]*/
+/*
+    const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+
+app.use(bodyParser.json());
+
+
+var lista = [];
+
+function getPokemon(req, res) {
+    res.send(lista);
+}
+
+function criandoPokemon(req, res) {
+    const pokemon = req.body;
+    const pokemonPesquisado = lista.find((pokemonNaLista) => pokemonNaLista.id === pokemon.id);
+    if (!pokemonPesquisado) {
+        lista.push(pokemon);
+        res.send('inserido com sucesso');
+    } else {
+        res.send(`não é possível inserir pois já existe um pokemon com o id ${pokemon.id}`);
+    }
+}
+
+function getPokemonById(req, res) {
+    const pokemonId = req.params.id;
+    const pokemonPesquisado = lista.find((pokemonNaLista) => pokemonNaLista.id == pokemonId);
+    if(!pokemonPesquisado){
+        res.send(`não existe um pokemón com o id ${pokemonId}`)
+    } else {
+        res.send(pokemonPesquisado);
+    }
+}
+
+function deletePokemon(req, res) {
+    const pokemonId = req.params.id;
+    lista = lista.filter((pokemon) => pokemon.id != pokemonId);
+    res.send(`pokemon de id ${pokemonId} foi removido com sucesso!`);
+}
+
+function updatePokemon(req, res) {
+    const pokemonId = req.params.id;
+    const pokemon = req.body;
+    const pokemonPesquisado = lista.find((pokemonNaLista) => pokemonNaLista.id == pokemonId);
+    if(!pokemonPesquisado){
+        res.send(`não existe um pokemón com o id ${pokemonId}`)
+    } else {
+        pokemonPesquisado.name = pokemon.name;
+        pokemonPesquisado.id = pokemon.id;
+        pokemonPesquisado.default = pokemon.default;
+        pokemonPesquisado.weight = pokemon.weight;
+        pokemonPesquisado.order = pokemon.order;
+        pokemonPesquisado.nicknames = pokemon.nicknames;
+        res.send(`pokemon de id ${pokemonId} alterado com sucesso!`);
+    }
+}
+
+app.get('/pokemon', getPokemon);
+app.get('/pokemon/:id', getPokemonById);
+app.post('/pokemon', criandoPokemon);
+app.put('/pokemon/:id', updatePokemon);
+app.delete('/pokemon/:id', deletePokemon);
+
+
+app.listen(3000);
+*/
