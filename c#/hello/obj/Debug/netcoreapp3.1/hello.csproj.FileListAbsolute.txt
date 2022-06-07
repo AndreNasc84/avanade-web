@@ -1,0 +1,14 @@
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\bin\Debug\netcoreapp3.1\hello.exe
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\bin\Debug\netcoreapp3.1\hello.deps.json
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\bin\Debug\netcoreapp3.1\hello.runtimeconfig.json
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\bin\Debug\netcoreapp3.1\hello.runtimeconfig.dev.json
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\bin\Debug\netcoreapp3.1\hello.dll
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\bin\Debug\netcoreapp3.1\hello.pdb
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\obj\Debug\netcoreapp3.1\hello.AssemblyInfoInputs.cache
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\obj\Debug\netcoreapp3.1\hello.AssemblyInfo.cs
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\obj\Debug\netcoreapp3.1\hello.csproj.CoreCompileInputs.cache
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\obj\Debug\netcoreapp3.1\hello.dll
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\obj\Debug\netcoreapp3.1\hello.pdb
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\obj\Debug\netcoreapp3.1\hello.genruntimeconfig.cache
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\obj\Debug\netcoreapp3.1\hello.csproj.AssemblyReference.cache
+C:\Users\IsisH\Documents\Andre\Avanade\avanade-web\c#\hello\obj\Debug\netcoreapp3.1\hello.GeneratedMSBuildEditorConfig.editorconfig
