@@ -10,7 +10,9 @@ namespace hello
             //Program.escreverString("teste");
            // Program.multiply(10, 20);
            // Program.escreverODigitado();
-            Program.multiply();
+            Program.multiplica();
+            Program.soma();
+            Program.escreveSoma();
         }
         static void escrever()
         {
@@ -30,10 +32,16 @@ namespace hello
         {
             Console.WriteLine(s);
         }
-        static void multiply(int num1, int num2)
+        static void multiplica(int num1, int num2)
         {
             Console.WriteLine(num1 * num2);
         }
+
+        static void soma(int numA, int numB)
+        {
+            Console.WriteLine(numA + numB);
+        }
+
         static void escreverODigitado()
         {
             Console.WriteLine("Digite algo");
@@ -43,15 +51,31 @@ namespace hello
             //Console.WriteLine("Olá" + nome+", seja bem vindo");
             Console.WriteLine("No seu próximo aniversario, você fará: " + (idade+1) + " anos");
         }
-        static void multiply()
+        static void multiplica()
         {
             Console.WriteLine("Digite primeiro número");
             double num1 = double.Parse(Console.ReadLine());;
             Console.WriteLine("Digite segundo número");
             double num2 = double.Parse(Console.ReadLine());
             //Console.WriteLine("Olá" + nome+", seja bem vindo");
-            Console.WriteLine("O resultaado da multiplicação é " + (num1*num2));
+            Console.WriteLine("O resultaado da multiplicação é " + (num1 * num2));
         }
+        static void soma()
+        {
+            Console.WriteLine("Digite o primeiro numero");
+            int NumA = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digiteo segundo numero");
+            int NumB = int.Parse(Console.ReadLine());
+            Console.WriteLine("A soma de NumA e NumB é " + (NumA + NumB));
+        }
+        
+        static void escreveSoma()
+        {
+            int N1 = 50;
+            int N2 = 50;
+            Console.WriteLine("A soma de N1 e N2 é " + (N1 + N2));
+        }
+        
     }
 }
 //Escrever uma função que some 2 números passados como parâmetro e imprima na tela. 
@@ -62,3 +86,8 @@ namespace hello
 //Complete a função que obtém do usuário dados para imputar os valores na função soma feita na primeira atividade. 
 //Altere também para a função soma retornar o resultado e não mais escrevê-la na tela. 
 //Use o Console.WriteLine chamando a soma para imprimir na tela.
+
+//1 - mudar a função soma para retornar o resultado.
+//2 - receber do usuário os valores a serem somados
+//3 - criar uma outra função com nome do tipo escreveSoma que chame a soma e imprima na tela
+
